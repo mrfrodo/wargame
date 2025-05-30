@@ -1,0 +1,14 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fdf6e3;
+    color: #333;
+    padding: 2em;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+.battle-list {
+    margin-top: 2em;
+}
