@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Wargame</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/css/wargame.css" />
+</head>
+
+<body>
+
+<h1 th:text="${title}">Wargame</h1>
+<p>Welcome, <strong th:text="${heroName}">hero</strong>!</p>
+
+<button id="start-game-button">Start Game</button>
+
+<div class="battle-list">
+    <h2>Legendary Battles</h2>
+    <ul>
+        <li th:each="battle : ${battles}">
+            <span th:text="${battle.name}">Battle Name</span>
+            (<span th:text="${battle.battleyear}">Year</span>)
+        </li>
+    </ul>
+</div>
+
+<script src="/js/wargame.js"></script>
+</body>
+</html>

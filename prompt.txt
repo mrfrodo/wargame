@@ -1,0 +1,43 @@
+I am making a 2D wargame in java. Backend is spring boot api.
+I am using postgres database. 
+2D map shall be shown in a fantasy themed maplibre.
+I am using java record battle.java to store my battles
+My table looks like this
+CREATE TABLE IF NOT EXISTS battles (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    battleyear INTEGER
+);
+I AM USING SPRING DATA JDBC. I AM NOT USING SPRING DATA JPA.
+
+This is my battle.java record
+
+
+@Table("battles")
+public record Battle(
+        @Id
+        @Column("id") // lowercase to match schema
+        Long id,
+
+        @Column("name")
+        String name,
+
+        @Column("battleyear")
+        Integer battleyear
+) {}
+
+Use make HTTP requests to my spring boot API from C (e.g., via libcurl) and call my spring boot rest api
+
+Use the JSON response and create a cool gui written in C
+
+My C programming environment needs to work BOTH on windows/cygwin AND linux ubuntu
+
+I want to
+
+Write C code once — for both Linux and Windows (via Cygwin).
+
+Make HTTP requests to your Spring Boot API using libcurl
+
+Parse JSON with cJSON
+
+Show GUI with GTK

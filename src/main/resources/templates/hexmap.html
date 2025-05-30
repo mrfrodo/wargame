@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hex Map</title>
+    <style>
+        svg {
+          border: 1px solid #ccc;
+          width: 100%;
+          height: 90vh;
+        }
+        .hex {
+          stroke: #333;
+          stroke-width: 1;
+          fill: lightgray;
+        }
+        .plains { fill: #d2f5c4; }
+        .forest { fill: #4caf50; }
+        .mountain { fill: #9e9e9e; }
+        .river { fill: #03a9f4; }
+        .desert { fill: #f4e285; }
+    </style>
+</head>
+<body>
+<h1>Hex Map</h1>
+
+<svg id="hexmap"></svg>
+
+<script src="/js/wargame.js"></script>
+</body>
+</html>
