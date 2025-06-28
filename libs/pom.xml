@@ -10,24 +10,16 @@
 	</parent>
 
 	<artifactId>libs</artifactId>
+	<packaging>jar</packaging>
 
 	<properties>
-
 	</properties>
 
 	<dependencies>
-
 	</dependencies>
-
-	<dependencyManagement>
-		<dependencies>
-
-		</dependencies>
-	</dependencyManagement>
 
 	<build>
 		<plugins>
-
 		</plugins>
 	</build>
 
