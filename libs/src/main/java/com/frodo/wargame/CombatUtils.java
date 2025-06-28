@@ -1,7 +1,5 @@
 package com.frodo.wargame;
 
-import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.Random;
 
 /**
