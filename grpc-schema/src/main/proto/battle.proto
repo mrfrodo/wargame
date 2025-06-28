@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package com.frodo.wargame;
+
+service BattleService {
+  rpc SimulateBattle (BattleRequest) returns (BattleResult);
+}
+
+message BattleRequest {
+  Unit attacker = 1;
+  Unit defender = 2;
+}
+
+message Unit {
+  string name = 1;
+  int32 attack = 2;
+  int32 defense = 3;
+  int32 accuracy = 4;
+  int32 evasion = 5;
+  int32 morale = 6;
+}
+
+message BattleResult {
+  string winner = 1;
+  int32 damageDealt = 2;
+  bool criticalHit = 3;
+  bool hitLanded = 4;
+}
