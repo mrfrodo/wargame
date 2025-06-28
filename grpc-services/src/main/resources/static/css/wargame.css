@@ -1,0 +1,27 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #fdf6e3;
+    color: #333;
+    padding: 2em;
+}
+
+h1 {
+    color: darkgreen;
+}
+
+.battle-list {
+    margin-top: 2em;
+}
+
+
+.hex {
+    stroke: #333;
+    stroke-width: 1;
+    fill: lightgray;
+}
+
+.hex.plains { fill: #d2b48c; }
+.hex.forest { fill: #228b22; }
+.hex.mountain { fill: #a9a9a9; }
+.hex.river { fill: #1e90ff; }
+.hex.desert { fill: #f4a460; }

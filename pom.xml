@@ -2,16 +2,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.5.0</version>
 	</parent>
 
-	<groupId>com.frodo</groupId>
+	<groupId>com.frodo.wargame</groupId>
 	<artifactId>wargame</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>wargame</name>
+
+	<modules>
+		<module>backend</module>
+		<module>libs</module>
+		<module>grpc-services</module>
+		<module>grpc-schema</module>
+	</modules>
 
 	<properties>
 		<java.version>21</java.version>
@@ -66,10 +75,7 @@
 
 	<build>
 		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+
 		</plugins>
 	</build>
 

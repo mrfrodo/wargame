@@ -9,7 +9,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
-
 @SpringBootTest(properties = {
         "spring.config.location=classpath:/application-test.properties"
 })
@@ -20,8 +19,7 @@ public class BattleServiceIntegrationTest {
 
     @Autowired
     private BattleRepository battleRepository;
-
-
+    
     @Test
     void testGetAllAllBattlesANDwritetoconsole() {
         List<Battle> battles = battleService.getAllBattles();
