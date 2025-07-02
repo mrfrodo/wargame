@@ -21,7 +21,7 @@ public class BattleServiceIntegrationTest {
 
     @Autowired
     private BattleRepository battleRepository;
-    
+
     @Test
     void testGetAllAllBattlesANDwritetoconsole() {
         List<Battle> battles = battleService.getAllBattles();
